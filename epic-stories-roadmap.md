@@ -42,5 +42,4 @@ PMs are responsible for keeping epic status current in Jira so the roadmap refle
 
 ## Related
 
-- Sprint planning process → `sprint-planning.md`
-- Roadmap review cadence → `roadmap-cadence.md`
+
