@@ -1,6 +1,6 @@
 # Daily Product Stats
 
-Automated daily product metrics pulled from Datadog and posted to Slack by a [Claude Code scheduled trigger](https://docs.anthropic.com/en/docs/claude-code).
+Automated daily product metrics pulled from Datadog and BigQuery, posted to Slack by a [Claude Code scheduled trigger](https://docs.anthropic.com/en/docs/claude-code).
 
 Runs every weekday at 12:30 UTC. Stats are posted to `#product-engineering-sync` and `#leadership-team`, and committed here as a daily log.
 
@@ -15,10 +15,13 @@ Runs every weekday at 12:30 UTC. Stats are posted to `#product-engineering-sync`
 - Card Swipes
 - Card Activations (App/Portal)
 
-**Rates (7-day rolling)**
+**Item Stats**
+- Active SKUs across merchant listings (from BigQuery `merchant.item` + `merchant.merchant_item`)
+- Item Approval Rate (7-day rolling)
+
+**Digital Engagement (7-day rolling)**
 - IVR Containment
 - SMS Opt-in at Registration
-- Item Approval Rate
 
 **Adjudication**
 - Model Match Rate
